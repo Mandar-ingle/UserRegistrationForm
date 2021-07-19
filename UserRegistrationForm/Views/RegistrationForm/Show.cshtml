@@ -1,0 +1,15 @@
+﻿@model List<UserRegistrationForm.Models.Student>
+
+@{
+    ViewData["Display"] = "ShowDetails";
+    Layout = null;
+}
+@foreach (var v in Model)
+{
+    <h2>v.First_Name</h2>
+    <h2>v.Last_Name</h2>
+    <h2>v.UserName</h2>
+    <h2>v.Password</h2>
+    <h2>v.Email</h2>
+    <h2>v.Contact</h2>
+}
